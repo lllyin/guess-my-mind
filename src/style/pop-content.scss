@@ -1,0 +1,46 @@
+@import "_rem.scss";
+
+.pop-content{
+  position: fixed;
+
+  //border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: rem(20) rem(12) rem(25) rem(12);
+  background-color: #fff;
+  box-shadow: 1px 1px 3px 0px #aaa;
+  animation: riseAnim 1.2s ease;
+  animation-fill-mode: forwards;
+  .title{
+    text-align: center;
+    font-size: rem(18);
+    font-weight: 500;
+    color: #333;
+    margin-bottom: rem(10);
+  }
+  .content{
+    text-indent: rem(24);
+    font-size: rem(15);
+    line-height: rem(28);
+    color: #666;
+    >span{
+      padding: 0 rem(5);
+    }
+  }
+}
+
+@keyframes riseAnim {
+  from{
+    width: 20%;
+    top:0;
+    left: 9%;
+    opacity: 0.6;
+    transform: rotate(0);
+  }
+  to{
+    width: 80%;
+    top: 30vh;
+    left: 10%;
+    opacity: 1;
+    transform: rotate(360deg);
+  }
+}

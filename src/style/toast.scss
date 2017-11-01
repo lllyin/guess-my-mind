@@ -1,0 +1,37 @@
+@import "./_rem.scss";
+.ly-toast{
+  position: fixed;
+  bottom: 10%;
+  left: 50%;
+  margin-left: -30%;
+  background:rgba(0,0,0,.5);
+  color: #fff;
+  font-size: rem(12);
+  border-radius: 8px;
+  box-shadow: 0px 0px 3px 1px #333;
+  padding: rem(8) rem(8);
+  text-align: center;
+  width: 60%;
+  opacity: 0;
+}
+
+.ly-toast.show{
+  animation: showToast 3.5s;
+  animation-direction:alternate;
+}
+
+@keyframes showToast {
+  0%{
+    opacity: 1;
+    transform: translateY(8px);
+  }
+  8%{
+    transform: translateY(0);
+  }
+  80%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}

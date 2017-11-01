@@ -1,0 +1,40 @@
+@import "_rem.scss";
+
+.pop-model-wrap.hide{
+  display: none;
+}
+.pop-model-wrap.show{
+  display: flex;
+}
+.pop-model-wrap{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .pop-model{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    animation: backgroundGradient 0.5s ease;
+    animation-fill-mode: forwards;
+  }
+  .close{
+    position: absolute;
+    top:rem(12);
+    right: rem(10);
+    display: inline-block;
+    font-size: rem(14);
+    color: #ccc;
+  }
+}
+
+@keyframes backgroundGradient {
+  from{
+    background: rgba(0,0,0,0.1);
+  }
+  to{
+    background: rgba(0,0,0,0.3);
+  }
+}
