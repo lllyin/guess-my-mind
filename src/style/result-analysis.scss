@@ -1,0 +1,80 @@
+@import "_rem.scss";
+
+
+.result-wrap{
+  padding: rem(15) rem(12);
+  background-color: #fff;
+  width: 100%;
+  .title{
+    font-size: rem(15);
+    font-weight: 500;
+    padding-left: rem(8);
+    border-left: 2px solid green;
+  }
+  p.content{
+    font-size: rem(15);
+    margin: rem(10) 0;
+    >span{
+      padding: 0 rem(5);
+    }
+  }
+}
+
+.analysis-wrap{
+  width: 100%;
+  display: flex;
+  background-color: #fafafa;
+  border-radius: 5px;
+  margin: rem(15) 0;
+  padding: rem(12) rem(8);
+  .analysis-box{
+    width: 50%;
+    min-height: rem(100);
+    >li{
+      margin: rem(15) 0;
+      font-size: rem(16);
+      padding: rem(8) rem(6);
+    }
+  }
+  .answer-box{
+    //background-color: #eee;
+  }
+  .reply-box{
+    //background-color: #ccc;
+    .right{
+      background-color: green;
+    }
+    .error{
+      background-color: #F43334;
+    }
+  }
+  .analysis-box-header{
+    font-size: rem(15);
+  }
+}
+
+.tips{
+  font-size: rem(15);
+  display: flex;
+  justify-content: flex-end;
+  .example{
+    span{
+      display: inline-block;
+      width: rem(25);
+      height: rem(15);
+      margin-right: rem(5);
+    }
+    margin: 0 rem(10);
+  }
+  .right-example{
+    span{
+      background-color: green;
+    }
+  }
+  .error-example{
+    span{
+      background-color: #F43334;
+    }
+  }
+}
+

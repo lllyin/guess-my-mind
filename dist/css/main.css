@@ -150,3 +150,54 @@ body {
     background: rgba(0, 0, 0, 0.1); }
   to {
     background: rgba(0, 0, 0, 0.3); } }
+.result-wrap {
+  padding: 0.4rem 0.32rem;
+  background-color: #fff;
+  width: 100%; }
+  .result-wrap .title {
+    font-size: 0.4rem;
+    font-weight: 500;
+    padding-left: 0.21333rem;
+    border-left: 2px solid green; }
+  .result-wrap p.content {
+    font-size: 0.4rem;
+    margin: 0.26667rem 0; }
+    .result-wrap p.content > span {
+      padding: 0 0.13333rem; }
+
+.analysis-wrap {
+  width: 100%;
+  display: flex;
+  background-color: #fafafa;
+  border-radius: 5px;
+  margin: 0.4rem 0;
+  padding: 0.32rem 0.21333rem; }
+  .analysis-wrap .analysis-box {
+    width: 50%;
+    min-height: 2.66667rem; }
+    .analysis-wrap .analysis-box > li {
+      margin: 0.4rem 0;
+      font-size: 0.42667rem;
+      padding: 0.21333rem 0.16rem; }
+  .analysis-wrap .reply-box .right {
+    background-color: green; }
+  .analysis-wrap .reply-box .error {
+    background-color: #F43334; }
+  .analysis-wrap .analysis-box-header {
+    font-size: 0.4rem; }
+
+.tips {
+  font-size: 0.4rem;
+  display: flex;
+  justify-content: flex-end; }
+  .tips .example {
+    margin: 0 0.26667rem; }
+    .tips .example span {
+      display: inline-block;
+      width: 0.66667rem;
+      height: 0.4rem;
+      margin-right: 0.13333rem; }
+  .tips .right-example span {
+    background-color: green; }
+  .tips .error-example span {
+    background-color: #F43334; }

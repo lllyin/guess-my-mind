@@ -11,6 +11,7 @@ useStrict(true);
 
 import QuestionForm from "./scripts/QuestionForm";
 import PopModel from "./scripts/PopModel";
+import ResultAnalysis from "./scripts/ResultAnalysis";
 
 class MyState{
     @observable checkData = [];
@@ -34,7 +35,7 @@ const newState = new MyState();
 console.log("newState对象：",newState)
 
 @observer
-class App extends React.Component{
+class Main extends React.Component{
     render(){
         return(
             <div className="container">
@@ -44,6 +45,40 @@ class App extends React.Component{
         )
     }
 }
+
+
+class App extends React.Component{
+    constructor(props){
+        super(props);
+        this.state = { route: window.location.hash.substr(1)}
+    }
+
+    componentDidMount(){
+        window.addEventListener("hashchange",()=>{
+            this.setState({route: window.location.hash.substr(1)})
+        })
+    }
+
+    render(){
+        let Conent = []; //组件内容
+        switch (this.state.route){
+            case "/result":
+                Conent.push(<ResultAnalysis key={1} store={newState} />);
+                break;
+            default:
+                Conent.push(<Main key={1} />);
+        }
+        return(
+            <div>
+                {Conent}
+            </div>
+        )
+    }
+
+}
+
+
+
 
 ReactDOM.render(
     <App/>,

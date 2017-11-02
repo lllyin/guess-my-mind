@@ -20,9 +20,10 @@ const PopContent = (data) =>{
             <h1 className="title">结果</h1>
             <div className="content">
                 你答对了好友的题目<span style={{"color":"green"}}>{rightNum}</span>题，
-                总共<span style={{"fontWeight":"500"}}>{checkData.length}</span>题，
-                你的正确率为<span style={{"color":"#2BA245"}}>{(rightNum/checkData.length*100).toFixed(2)}%</span>。
-                <a href="">查看详细数据</a>
+                总共<span style={{"fontWeight":"500"}}>{checkData.length-1}</span>题，
+                你的正确率为<span style={{"color":"#2BA245"}}>{(rightNum/(checkData.length-1)*100).toFixed(2)}%</span>。
+                <a href="#/result">查看详细数据</a>
+                {/*<Link to="/result">查看详细数据</Link>*/}
             </div>
             <span
                 className="close"
