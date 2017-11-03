@@ -1,42 +1,141 @@
 [
   {
-    "type":"QUESTION",
-    "id":1,
-    "content":{
-      "question":"谁是世界上最帅的人谁?",
-      "answer":["吴彦祖","吉大吴彦祖","易中天","丑八怪"]
+    "type": "QUESTION",
+    "id": 1,
+    "content": {
+      "question": "谁是世界上最帅的人谁?",
+      "answer": [
+        "吴彦祖",
+        "吉大吴彦祖",
+        "易中天",
+        "丑八怪"
+      ]
     }
   },
   {
-    "type":"QUESTION",
-    "id":2,
-    "content":{
-      "question":"世界上最好的语言是什么?",
-      "answer":["JavaScript","A语言","B语言","D语言"]
+    "type": "QUESTION",
+    "id": 2,
+    "content": {
+      "question": "世界上最好的语言是什么?",
+      "answer": [
+        "JavaScript",
+        "A语言",
+        "B语言",
+        "D语言"
+      ]
     }
   },
   {
-    "type":"QUESTION",
-    "id":3,
-    "content":{
-      "question":"我叼吗？",
-      "answer":["叼","!叼","!!叼","!不叼"]
+    "type": "QUESTION",
+    "id": 3,
+    "content": {
+      "question": "我叼吗？",
+      "answer": [
+        "叼",
+        "!叼",
+        "!!叼",
+        "!不叼"
+      ]
     }
   },
   {
-    "type":"QUESTION",
-    "id":4,
-    "content":{
-      "question":"你是傻逼吗?",
-      "answer":["是","!不是","!!是"]
+    "type": "QUESTION",
+    "id": 4,
+    "content": {
+      "question": "你是傻逼吗?",
+      "answer": [
+        "是",
+        "!不是",
+        "!!是"
+      ]
     }
   },
   {
-    "type":"QUESTION",
-    "id":5,
-    "content":{
-      "question":"你猜我猜不猜？",
-      "answer":["猜","!不猜"]
+    "type": "QUESTION",
+    "id": 5,
+    "content": {
+      "question": "你猜我猜不猜？",
+      "answer": [
+        "猜",
+        "!不猜"
+      ]
+    }
+  },
+  {
+    "type": "QUESTION",
+    "id": 6,
+    "content": {
+      "question": "1+1=？",
+      "answer": [
+        "1",
+        "2"
+      ]
+    }
+  },
+  {
+    "type": "QUESTION",
+    "id": 7,
+    "content": {
+      "question": "2+2=？",
+      "answer": [
+        "2",
+        "4"
+      ]
+    }
+  },
+  {
+    "type": "QUESTION",
+    "id": 8,
+    "content": {
+      "question": "4+4？",
+      "answer": [
+        "4",
+        "8"
+      ]
+    }
+  },
+  {
+    "type": "QUESTION",
+    "id": 9,
+    "content": {
+      "question": "8+8=？",
+      "answer": [
+        "16",
+        "8"
+      ]
+    }
+  },
+  {
+    "type": "QUESTION",
+    "id": 10,
+    "content": {
+      "question": "how are you的意思是？",
+      "answer": [
+        "你好",
+        "你是谁"
+      ]
+    }
+  },
+  {
+    "type": "QUESTION",
+    "id": 11,
+    "content": {
+      "question": "how old are you的意思是？",
+      "answer": [
+        "你好",
+        "你多大了？"
+      ]
+    }
+  },
+  {
+    "type": "QUESTION",
+    "id": 12,
+    "content": {
+      "question": "三人成虎的意思是？",
+      "answer": [
+        "人多力量大",
+        "以讹传讹"
+      ]
     }
   }
 ]

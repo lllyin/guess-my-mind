@@ -154,7 +154,10 @@ class QuestionForm extends React.Component{
                     <div className={"question-form " + direction} key={key}>
                         <div className="question-info">
                             <img src={require("../media/" + "wx_logo.png")} />
-                            <h2 className="question-title">{val.content.question}</h2>
+                            <h2 className="question-title">
+                                {questionId}、
+                                {val.content.question}
+                            </h2>
                         </div>
                         <ul className="question-options">
                             {QustionOptionsList}
